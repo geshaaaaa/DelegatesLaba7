@@ -15,10 +15,10 @@ namespace delegates3
             Givesr givesr = delegate (int x, int y, int z)
             {
                 float sr = 0;
-                sr += (x + y + z)/3;
+                sr += ((float)x + (float)y + (float)z)/3;
                 return sr;
             };
-            float result = givesr(3,21,6 );
+            float result = givesr(3,5,6 );
             Console.WriteLine($"Середнє арифметичне:{result}");
         }
     }
